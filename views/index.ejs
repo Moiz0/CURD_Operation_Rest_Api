@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <div class="content">
+    <form method="post" action="/posts">
+      <h1>TODO APP!</h1>
+      <textarea type="text" placeholder="Enter new todo" name="task"></textarea
+      ><br />
+      <button>Submit</button>
+    </form>
+
+    <% for(post of posts) { %>
+      <div class="hello">
+          <p><%= post.task %></p>
+  
+          <div class="button-group">
+              <form action="http://localhost:8080/posts/<%= post.id %>/edit" method="GET">
+                  <button type="submit" class="edit">Edit</button>
+              </form>
+  
+              <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                  <button class="delete">Delete</button>
+              </form>
+          </div>
+      </div>
+  <% } %>
+  
+   </div>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+.content {
+
+                justify-items: center;
+}
+
+.hello {
+
+                display: flexbox;
+
+
+}
+
+/* General Styles */
+body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to right, #00c6ff, #0072ff);
+                color: white;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+}
+
+/* Centered Content */
+.content {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+                width: 400px;
+}
+
+/* Title */
+h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+                color: #fff;
+}
+
+/* Form Styling */
+form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+}
+
+/* Textarea */
+textarea {
+                width: 100%;
+                height: 60px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                resize: none;
+}
+
+/* Buttons */
+button {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: bold;
+}
+
+/* Submit Button */
+button[type="submit"] {
+                background: #00ffcc;
+                color: black;
+                transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+                background: #00b894;
+}
+
+/* Edit & Delete Buttons */
+button.edit {
+                background: #ffcc00;
+                color: black;
+}
+
+button.edit:hover {
+                background: #e0ac00;
+}
+
+button.delete {
+                background: #ff4d4d;
+                color: white;
+}
+
+button.delete:hover {
+                background: #cc0000;
+}
+
+/* Todo Item Box */
+.hello {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 15px;
+                border-radius: 8px;
+                margin: 10px 0;
+                box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+}
+
+/* Task Text */
+p {
+                font-size: 18px;
+                font-weight: bold;
+}
+
+/* General Styles */
+body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to right, #00c6ff, #0072ff);
+                color: white;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+}
+
+/* Centered Content */
+.content {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+                width: 400px;
+}
+
+/* Title */
+h1 {
+                font-size: 28px;
+                margin-bottom: 15px;
+                color: #fff;
+}
+
+/* Form Styling */
+form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+}
+
+/* Textarea */
+textarea {
+                width: 100%;
+                height: 60px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                resize: none;
+}
+
+/* Buttons */
+button {
+                padding: 8px 12px;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                cursor: pointer;
+                font-weight: bold;
+}
+
+/* Submit Button */
+button[type="submit"] {
+                background: #00ffcc;
+                color: black;
+                transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+                background: #00b894;
+}
+
+/* Edit & Delete Buttons */
+button.edit {
+                background: #ffcc00;
+                color: black;
+}
+
+button.edit:hover {
+                background: #e0ac00;
+}
+
+button.delete {
+                background: #ff4d4d;
+                color: white;
+}
+
+button.delete:hover {
+                background: #cc0000;
+}
+
+/* Todo Item Box */
+.hello {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 10px;
+                border-radius: 8px;
+                margin: 10px 0;
+                box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
+
+                /* Flexbox to make task and buttons in one line */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+}
+
+/* Task Text */
+p {
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0;
+                flex: 1;
+                /* Ensures text takes available space */
+}
+
+/* Buttons Container */
+.button-group {
+                display: flex;
+                gap: 10px;
+                /* Adds space between buttons */
+}
